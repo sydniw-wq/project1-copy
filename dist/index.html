@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Project 1</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-database.js"></script>
+</head>
+
+<body>
+<h1>Project 1</h1>
+<div class="enter"> 
+  <input id="username" type="text"> enter email here</input> 
+  <br><br>
+  <input id="password" type="password"> enter password here</input>
+  <br><br>
+  <button id="submit" type="submit">SUBMIT</button>
+</div>
+<div class="todo" style="display: none;">
+  <h1>CREATE YOUR TO DO LIST</h1>
+  <button id="create">CREATE TASK</button>
+  <button id="read">VIEW TASKS</button>
+</div>
+<div class="view" style="display: none;">
+    <h1>Task List</h1>
+    <ul id="taskList"></ul>
+    <button id="home">GO BACK</button>
+  </div>
+</body>
+<!-- partial -->
+  <script type="module" src="./script.js"></script>
+
+</body>
+</html>
